@@ -49,32 +49,41 @@ export default function RootLayout({
             </PageTransition>
           </main>
 
-          <footer className="py-20 border-t hairline-border bg-white">
-            <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start">
-              <div className="mb-10 md:mb-0">
-                <span className="font-serif text-3xl font-bold tracking-tight block mb-4">DIGIPRO</span>
-                <p className="text-muted max-w-xs text-sm leading-relaxed">
-                  International standard creative-tech agency. We define the intersection of art and digital performance.
+          <footer className="py-32 border-t hairline-border bg-white px-6">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-20">
+              <div className="md:col-span-2 space-y-8">
+                <div className="text-3xl font-serif italic tracking-tighter uppercase font-bold">Digipro.</div>
+                <p className="text-muted max-w-sm text-sm leading-relaxed">
+                  A high-end creative agency specializing in cinematic video production and premium digital solutions for international brands.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-20">
-                <div>
-                  <h4 className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted mb-6">Social</h4>
-                  <ul className="space-y-3 text-sm">
-                    <li><a href="#" className="hover:text-muted transition-colors">Instagram</a></li>
-                    <li><a href="#" className="hover:text-muted transition-colors">LinkedIn</a></li>
-                    <li><a href="#" className="hover:text-muted transition-colors">Behance</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted mb-6">Contact</h4>
-                  <p className="text-sm">hello@digipro.tech</p>
-                </div>
+              
+              <div className="space-y-8">
+                <h4 className="text-[10px] uppercase tracking-widest font-bold">Navigation</h4>
+                <ul className="space-y-4 text-[10px] font-bold uppercase tracking-widest">
+                  <li><a href="/work" className="hover:text-muted transition-colors">Work</a></li>
+                  <li><a href="/capabilities" className="hover:text-muted transition-colors">Capabilities</a></li>
+                  <li><a href="/studio" className="hover:text-muted transition-colors">Studio</a></li>
+                  <li><a href="/contact" className="hover:text-muted transition-colors">Contact</a></li>
+                </ul>
+              </div>
+
+              <div className="space-y-8">
+                <h4 className="text-[10px] uppercase tracking-widest font-bold">Social</h4>
+                <ul className="space-y-4 text-[10px] font-bold uppercase tracking-widest">
+                  <li><a href="#" className="hover:text-muted transition-colors">Instagram</a></li>
+                  <li><a href="#" className="hover:text-muted transition-colors">LinkedIn</a></li>
+                  <li><a href="#" className="hover:text-muted transition-colors">Vimeo</a></li>
+                </ul>
               </div>
             </div>
-            <div className="max-w-7xl mx-auto px-6 mt-20 pt-10 border-t hairline-border flex justify-between items-center text-[10px] uppercase tracking-widest text-muted">
-              <span>© 2026 Digipro International</span>
-              <span>Built by PH Digipro</span>
+            
+            <div className="max-w-7xl mx-auto mt-32 pt-12 border-t hairline-border flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] font-bold text-muted">
+              <p>© 2026 Digipro International. All Rights Reserved.</p>
+              <div className="flex space-x-12 mt-8 md:mt-0">
+                <a href="#" className="hover:text-accent">Privacy Policy</a>
+                <a href="#" className="hover:text-accent">Terms of Service</a>
+              </div>
             </div>
           </footer>
         </SmoothScroll>
