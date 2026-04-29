@@ -64,7 +64,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-muted text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed font-sans font-light">
-            A creative-tech agency focused on high-end video production and digital product development.
+            Video Production • Photography • App Development • Web Solutions
           </p>
 
           <motion.div
