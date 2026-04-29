@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Studio | Digipro Cinematic & Digital Studio",
-  description: "Explore the core, methodology, and journey of Digipro, founded by Daniel Raditya Donny Eryanto.",
+  description: "Explore the core, methodology, and journey of Digipro. Founded in 2025.",
 };
 
 export default function StudioPage() {
@@ -19,7 +19,7 @@ export default function StudioPage() {
           </div>
           <div className="lg:max-w-md pb-4">
             <p className="text-xs uppercase tracking-[0.3em] font-bold text-muted leading-relaxed border-l hairline-border pl-8">
-              Founded by Daniel Raditya Donny Eryanto, Digipro operates as a creative-tech laboratory where code meets cinematography.
+              Digipro operates as a creative-tech laboratory where code meets cinematography, bridging high-end aesthetics with technical precision.
             </p>
           </div>
         </header>
@@ -101,7 +101,7 @@ export default function StudioPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
             <div className="space-y-12">
               <h2 className="text-[10px] uppercase tracking-[0.5em] font-bold text-muted">The Digipro Journey</h2>
-              <h3 className="text-4xl md:text-5xl font-serif italic">Founded in 2025 by Daniel Raditya Donny Eryanto.</h3>
+              <h3 className="text-4xl md:text-5xl font-serif italic">Founded in 2025.</h3>
               <p className="text-muted leading-relaxed max-w-md">
                 Digipro was established to answer the challenges of an increasingly integrated creative industry, bridging high-end aesthetics with technical precision.
               </p>
