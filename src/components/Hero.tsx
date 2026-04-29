@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -28,66 +29,69 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[90vh] flex items-center px-6 overflow-hidden bg-white">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#FAFAFA]">
+      {/* Cinematic Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          ref={videoRef}
+          className={`w-full h-full object-cover transition-opacity duration-2000 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          muted
+          loop
+          playsInline
+          onLoadedData={() => setIsVideoLoaded(true)}
+          preload="auto"
+          poster="https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=2000"
         >
-          <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-muted block mb-6">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-minimalist-modern-architecture-4235-large.mp4" type="video/mp4" />
+        </video>
+        {/* Soft White Overlay for Text Clarity */}
+        <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-12"
+        >
+          <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-accent block mb-8">
             Creative-Tech Excellence
           </span>
-          <h1 className="text-6xl md:text-8xl mb-8 leading-[0.9] text-balance">
-            Crafting <span className="italic">Digital</span> Legacies.
+          
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif leading-[0.85] text-balance">
+            Engineering Digital Experiences & <span className="italic">Cinematic</span> Realities.
           </h1>
-          <p className="text-muted text-lg max-w-md mb-10 leading-relaxed font-sans">
-            Digipro is an international agency specializing in high-performance Video, Web, and App development for premium brands.
+          
+          <p className="text-muted text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed font-sans font-light">
+            A creative-tech agency focused on high-end video production and digital product development.
           </p>
-          <motion.button
-            whileHover={{ x: 10 }}
-            className="flex items-center space-x-4 group"
-          >
-            <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white group-hover:bg-muted transition-colors">
-              <ArrowRight size={20} />
-            </div>
-            <span className="uppercase tracking-widest text-xs font-bold">View Showreel</span>
-          </motion.button>
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-          className="relative aspect-video hairline-border bg-[#F0F0F0] overflow-hidden"
-        >
-          {/* High-Res Placeholder Image */}
-          {!isVideoLoaded && (
-            <div className="absolute inset-0 bg-[#F0F0F0] animate-pulse flex items-center justify-center text-[10px] uppercase tracking-widest text-muted italic">
-              Loading Cinematic Experience...
-            </div>
-          )}
-          
-          <video
-            ref={videoRef}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
-            muted
-            loop
-            playsInline
-            onLoadedData={() => setIsVideoLoaded(true)}
-            preload="none"
-            poster="https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200"
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8, duration: 1 }}
+            className="pt-12"
           >
-            {/* Example Video Link from a high-performance CDN (using a placeholder sample) */}
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-minimalist-modern-architecture-4235-large.mp4" type="video/mp4" />
-          </video>
-          
-          <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none" />
+            <Link 
+              href="/work" 
+              className="group relative inline-flex items-center space-x-6 px-16 py-8 bg-accent text-white interactable hover:shadow-2xl transition-all duration-500 overflow-hidden"
+            >
+              <span className="relative z-10 text-xs uppercase tracking-[0.4em] font-bold">Explore Our Work</span>
+              <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-2 transition-transform duration-500" />
+              <motion.div 
+                className="absolute inset-0 bg-muted -z-0"
+                initial={{ x: "-100%" }}
+                whileHover={{ x: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              />
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
 
-      {/* Decorative Background Element */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FAFAFA] -z-0" />
+      {/* Aesthetic Hairline Border Bottom */}
+      <div className="absolute bottom-0 left-0 w-full h-px bg-border/50" />
     </section>
   );
 }
