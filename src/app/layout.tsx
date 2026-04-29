@@ -31,7 +31,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">
-        <IntroLoader />
         <CustomCursor />
         <SmoothScroll>
           <nav className="fixed top-0 w-full z-50 glass hairline-border border-t-0 border-x-0">

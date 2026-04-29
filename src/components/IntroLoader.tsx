@@ -3,20 +3,18 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+let hasPlayedGlobal = false;
+
 export default function IntroLoader() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(!hasPlayedGlobal);
 
   useEffect(() => {
-    const hasPlayed = sessionStorage.getItem("intro-played");
-    if (hasPlayed) {
-      setIsVisible(false);
-      return;
-    }
+    if (hasPlayedGlobal) return;
 
     const timer = setTimeout(() => {
       setIsVisible(false);
-      sessionStorage.setItem("intro-played", "true");
-    }, 3500);
+      hasPlayedGlobal = true;
+    }, 2500); // Efficient duration: 2.5s
 
     return () => clearTimeout(timer);
   }, []);
