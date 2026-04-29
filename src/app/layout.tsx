@@ -35,7 +35,9 @@ export default function RootLayout({
         <SmoothScroll>
           <nav className="fixed top-0 w-full z-50 glass hairline-border border-t-0 border-x-0">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-              <Link href="/" className="font-serif text-2xl font-bold tracking-tight hover:italic transition-all">DIGIPRO</Link>
+              <Link href="/" className="flex items-center">
+                <img src="/logo.png" alt="DIGIPRO" className="h-8 md:h-10 w-auto object-contain" />
+              </Link>
               <div className="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium">
                 <a href="/work" className="hover:text-muted transition-colors">Work</a>
                 <a href="/capabilities" className="hover:text-muted transition-colors">Capabilities</a>

@@ -67,6 +67,15 @@ export default function Hero() {
             Video Production • Photography • App Development • Web Solutions
           </p>
 
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1.2 }}
+            className="font-serif text-lg md:text-xl italic tracking-wide text-muted/80"
+          >
+            "Crafting Digital Monuments for Defining Lives"
+          </motion.p>
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

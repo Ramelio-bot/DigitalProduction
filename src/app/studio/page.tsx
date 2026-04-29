@@ -103,14 +103,14 @@ export default function StudioPage() {
               <h2 className="text-[10px] uppercase tracking-[0.5em] font-bold text-muted">The Digipro Journey</h2>
               <h3 className="text-4xl md:text-5xl font-serif italic">Founded in 2025.</h3>
               <p className="text-muted leading-relaxed max-w-md">
-                Digipro was established to answer the challenges of an increasingly integrated creative industry, bridging high-end aesthetics with technical precision.
+                Digipro was established to bridge the gap between high-end aesthetics and technical precision. Since its inception, we have been trusted to execute strategic projects across cinematic and digital landscapes.
               </p>
             </div>
             <div className="space-y-16">
               {[
-                { title: "Personal Branding Content", desc: "Building strong and authentic visual identities for professional individuals." },
-                { title: "Web & App Development", desc: "Creating functional platforms such as MyInvoice.space and the Axiom trading dashboard." },
-                { title: "Social Media Management", desc: "Managing digital narratives consistently to build community and brand loyalty." }
+                { title: "Bicara Rasa Bicara Sejarah", desc: "A research-driven documentary series documenting local culinary acculturation and historical values." },
+                { title: "Axiom & MyInvoice.space", desc: "Developing premium digital platforms with a focus on functional elegance and institutional usability." },
+                { title: "Social Media & Branding", desc: "Crafting authentic visual identities and managing digital narratives for global recognition." }
               ].map((item, i) => (
                 <div key={item.title} className="group flex items-start gap-8">
                   <span className="text-[10px] font-bold text-muted mt-1">0{i+1}</span>
