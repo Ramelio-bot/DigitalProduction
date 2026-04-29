@@ -60,21 +60,12 @@ export default function Hero() {
           </span>
           
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif leading-[0.85] text-balance">
-            Engineering Digital Experiences & <span className="italic">Cinematic</span> Realities.
+            Crafting Digital <span className="italic">Monuments</span> for Defining Lives.
           </h1>
           
           <p className="text-muted text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed font-sans font-light">
             Video Production • Photography • App Development • Web Solutions
           </p>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1.2 }}
-            className="font-serif text-lg md:text-xl italic tracking-wide text-muted/80"
-          >
-            "Crafting Digital Monuments for Defining Lives"
-          </motion.p>
 
           <motion.div
             initial={{ opacity: 0 }}
