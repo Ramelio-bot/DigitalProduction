@@ -4,6 +4,8 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
+import IntroLoader from "@/components/IntroLoader";
+import Link from "next/link";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -29,11 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">
+        <IntroLoader />
         <CustomCursor />
         <SmoothScroll>
           <nav className="fixed top-0 w-full z-50 glass hairline-border border-t-0 border-x-0">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-              <span className="font-serif text-2xl font-bold tracking-tight">DIGIPRO</span>
+              <Link href="/dashboard" className="font-serif text-2xl font-bold tracking-tight hover:italic transition-all">DIGIPRO</Link>
               <div className="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium">
                 <a href="/work" className="hover:text-muted transition-colors">Work</a>
                 <a href="/capabilities" className="hover:text-muted transition-colors">Capabilities</a>
