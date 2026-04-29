@@ -39,14 +39,14 @@ export default function CustomCursor() {
     const interactables = document.querySelectorAll('a, button, [role="button"]');
     interactables.forEach((el) => {
       el.addEventListener("mouseenter", handleHoverStart as EventListener);
-      el.addEventListener("mouseleave", handleHoverEnd);
+      el.addEventListener("mouseleave", handleHoverEnd as EventListener);
     });
 
     return () => {
       window.removeEventListener("mousemove", moveCursor);
       interactables.forEach((el) => {
-        el.removeEventListener("mouseenter", handleHoverStart);
-        el.removeEventListener("mouseleave", handleHoverEnd);
+        el.removeEventListener("mouseenter", handleHoverStart as EventListener);
+        el.removeEventListener("mouseleave", handleHoverEnd as EventListener);
       });
     };
   }, [cursorX, cursorY, isVisible]);
