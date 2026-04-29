@@ -13,6 +13,7 @@ export default function CustomCursor() {
   const springConfig = { damping: 25, stiffness: 300 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
+  const [isHoveringProject, setIsHoveringProject] = useState(false);
 
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
@@ -21,14 +22,23 @@ export default function CustomCursor() {
       if (!isVisible) setIsVisible(true);
     };
 
-    const handleHoverStart = () => setIsHovered(true);
-    const handleHoverEnd = () => setIsHovered(false);
+    const handleHoverStart = (e: MouseEvent) => {
+      setIsHovered(true);
+      const target = e.target as HTMLElement;
+      if (target.closest("[data-cursor='view']")) {
+        setIsHoveringProject(true);
+      }
+    };
+    const handleHoverEnd = () => {
+      setIsHovered(false);
+      setIsHoveringProject(false);
+    };
 
     window.addEventListener("mousemove", moveCursor);
     
     const interactables = document.querySelectorAll('a, button, [role="button"]');
     interactables.forEach((el) => {
-      el.addEventListener("mouseenter", handleHoverStart);
+      el.addEventListener("mouseenter", handleHoverStart as EventListener);
       el.addEventListener("mouseleave", handleHoverEnd);
     });
 
@@ -43,7 +53,7 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-4 h-4 bg-accent rounded-full pointer-events-none z-[9999] mix-blend-difference"
+      className="fixed top-0 left-0 flex items-center justify-center bg-accent rounded-full pointer-events-none z-[9999] mix-blend-difference"
       style={{
         translateX: cursorXSpring,
         translateY: cursorYSpring,
@@ -51,8 +61,16 @@ export default function CustomCursor() {
         y: "-50%",
         scale: isHovered ? 2.5 : 1,
         opacity: isVisible ? 1 : 0,
+        width: isHoveringProject ? 80 : 16,
+        height: isHoveringProject ? 80 : 16,
       }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-    />
+    >
+      {isHoveringProject && (
+        <span className="text-[10px] uppercase font-bold text-white tracking-tighter">
+          View
+        </span>
+      )}
+    </motion.div>
   );
 }

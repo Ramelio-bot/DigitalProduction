@@ -1,0 +1,38 @@
+[
+  {
+    "id": "01",
+    "title": "Aesthetic Real Estate",
+    "category": "Cinematic Video",
+    "type": "video",
+    "thumbnail": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-2465-large.mp4",
+    "shortDescription": "Cinematic showcase for luxury real estate properties in London."
+  },
+  {
+    "id": "02",
+    "title": "Minimalist E-Commerce",
+    "category": "Web Design / App",
+    "type": "digital",
+    "thumbnail": "https://images.unsplash.com/photo-1491897554428-130a60dd4757?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-his-laptop-3145-large.mp4",
+    "shortDescription": "High-performance digital store for a premium fashion brand."
+  },
+  {
+    "id": "03",
+    "title": "Corporate Identity 2026",
+    "category": "Brand / Photo",
+    "type": "photo",
+    "thumbnail": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-office-building-with-glass-facade-reflecting-the-sky-4234-large.mp4",
+    "shortDescription": "Complete brand overhaul and editorial photography for a tech startup."
+  },
+  {
+    "id": "04",
+    "title": "Travel Documentary",
+    "category": "Cinematic Video",
+    "type": "video",
+    "thumbnail": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-cinematic-view-of-a-lake-and-mountains-2467-large.mp4",
+    "shortDescription": "Breathtaking visuals from our latest expedition across the Swiss Alps."
+  }
+]
