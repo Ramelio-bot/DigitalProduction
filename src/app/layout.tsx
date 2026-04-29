@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
+import PageTransition from "@/components/PageTransition";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -43,7 +44,9 @@ export default function RootLayout({
           </nav>
           
           <main className="flex-grow pt-20">
-            {children}
+            <PageTransition>
+              {children}
+            </PageTransition>
           </main>
 
           <footer className="py-20 border-t hairline-border bg-white">
