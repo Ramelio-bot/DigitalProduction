@@ -4,17 +4,27 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import portfolioData from "@/data/portfolio.json";
 
+interface Project {
+  id: string;
+  title: string;
+  category: string;
+  type: string;
+  thumbnail: string;
+  videoPreview: string;
+  shortDescription: string;
+}
+
 export default function PortfolioGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
-      {portfolioData.map((project, index) => (
+      {(portfolioData as Project[]).map((project, index) => (
         <ProjectCard key={project.id} project={project} index={index} />
       ))}
     </div>
   );
 }
 
-function ProjectCard({ project, index }: { project: any; index: number }) {
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 

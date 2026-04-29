@@ -36,7 +36,7 @@ export default function CustomCursor() {
 
     window.addEventListener("mousemove", moveCursor);
     
-    const interactables = document.querySelectorAll('a, button, [role="button"]');
+    const interactables = document.querySelectorAll('a, button, [role="button"], .interactable') as NodeListOf<HTMLElement>;
     interactables.forEach((el) => {
       el.addEventListener("mouseenter", handleHoverStart as EventListener);
       el.addEventListener("mouseleave", handleHoverEnd as EventListener);
