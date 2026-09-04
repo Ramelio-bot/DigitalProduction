@@ -56,7 +56,10 @@ export default function RootLayout({
           <footer className="py-32 border-t hairline-border bg-white px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-20">
               <div className="md:col-span-2 space-y-8">
-                <div className="text-3xl font-serif italic tracking-tighter uppercase font-bold">Digipro.</div>
+                <div className="text-3xl font-serif italic tracking-tighter uppercase font-bold flex items-baseline">
+                  Digipro
+                  <Link href="/login" className="cursor-default text-inherit hover:text-inherit opacity-90 transition-opacity" title="Restricted Area">.</Link>
+                </div>
                 <p className="text-muted max-w-sm text-sm leading-relaxed">
                   A high-end creative agency specializing in cinematic video production and premium digital solutions for international brands.
                 </p>
@@ -82,11 +85,22 @@ export default function RootLayout({
               </div>
             </div>
             
-            <div className="max-w-7xl mx-auto mt-32 pt-12 border-t hairline-border flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] font-bold text-muted">
+            <div className="max-w-7xl mx-auto mt-32 pt-12 border-t hairline-border flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] font-bold text-muted relative">
               <p>© 2026 Digipro International. All Rights Reserved.</p>
               <div className="flex space-x-12 mt-8 md:mt-0">
                 <a href="#" className="hover:text-accent">Privacy Policy</a>
                 <a href="#" className="hover:text-accent">Terms of Service</a>
+              </div>
+              
+              {/* Hidden Admin Login Logo */}
+              <div className="absolute right-0 bottom-0 translate-y-full pt-8 pb-2">
+                <Link href="/login" className="opacity-0 hover:opacity-10 transition-opacity duration-700 cursor-default">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5Z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </Link>
               </div>
             </div>
           </footer>
