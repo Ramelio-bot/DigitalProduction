@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
 import Link from "next/link";
+import { jsonLdContent } from "@/lib/csp-hash";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -62,22 +63,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://assets.mixkit.co" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Digipro International",
-              url: "https://digital-production.vercel.app",
-              description:
-                "High-end creative agency specializing in cinematic video production and premium digital solutions.",
-              foundingDate: "2025",
-              contactPoint: {
-                "@type": "ContactPoint",
-                email: "hello@digipro.tech",
-                contactType: "sales",
-              },
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: jsonLdContent }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground overflow-x-hidden">

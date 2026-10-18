@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { jsonLdHash } from "./src/lib/csp-hash";
 
 const nextConfig: NextConfig = {
   images: {
@@ -19,10 +20,16 @@ const nextConfig: NextConfig = {
             value: "camera=(), microphone=(), geolocation=()",
           },
           {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+          { key: "X-XSS-Protection", value: "1; mode=block" },
+          { key: "X-DNS-Prefetch-Control", value: "on" },
+          {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.mixkit.co",
+              `script-src 'self' '${jsonLdHash}' https://assets.mixkit.co`,
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https://images.unsplash.com https://assets.mixkit.co",
               "font-src 'self' data:",
