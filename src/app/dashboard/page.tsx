@@ -1,8 +1,34 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Plus } from "lucide-react";
+import { supabase, isSupabaseConfigured } from "@/lib/supabase";
 
 export default function DashboardOverview() {
+  const [totalProjects, setTotalProjects] = useState<number>(0);
+  const [dbConnected, setDbConnected] = useState<boolean>(isSupabaseConfigured);
+
+  useEffect(() => {
+    if (!isSupabaseConfigured || !supabase) {
+      setDbConnected(false);
+      setTotalProjects(0);
+      return;
+    }
+    supabase
+      .from("projects")
+      .select("*", { count: "exact", head: true })
+      .then(
+        ({ count }) => {
+          setTotalProjects(count ?? 0);
+          setDbConnected(true);
+        },
+        () => {
+          setDbConnected(false);
+        }
+      );
+  }, []);
+
   return (
     <div className="space-y-12 max-w-5xl">
       <header className="space-y-2">
@@ -13,7 +39,7 @@ export default function DashboardOverview() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="p-8 border hairline-border bg-[#FAFAFA] space-y-4">
           <p className="text-[10px] font-bold uppercase tracking-widest text-muted">Total Projects</p>
-          <p className="text-4xl font-serif">0</p>
+          <p className="text-4xl font-serif">{totalProjects}</p>
         </div>
         <div className="p-8 border hairline-border bg-[#FAFAFA] space-y-4">
           <p className="text-[10px] font-bold uppercase tracking-widest text-muted">Active Categories</p>
@@ -31,7 +57,9 @@ export default function DashboardOverview() {
       <section className="pt-12 border-t hairline-border space-y-6">
         <h2 className="text-xs font-bold uppercase tracking-widest text-muted">Recent Activity</h2>
         <div className="p-8 border hairline-border flex items-center justify-center text-sm text-muted bg-[#FAFAFA]">
-          No recent activity found. Connect Database to view live data.
+          {dbConnected
+            ? "Database connected. No recent activity to display."
+            : "No recent activity found. Connect Database to view live data."}
         </div>
       </section>
     </div>

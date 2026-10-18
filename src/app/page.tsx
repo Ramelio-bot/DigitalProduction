@@ -1,22 +1,24 @@
-"use client";
+import type { Metadata } from "next";
+import HomeClient from "./HomeClient";
 
-import { useEffect, useState } from "react";
-import Hero from "@/components/Hero";
-import IntroLoader from "@/components/IntroLoader";
+export const metadata: Metadata = {
+  title: "Digipro | Creative-Tech Agency",
+  description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
+  alternates: { canonical: "https://digital-production.vercel.app" },
+  openGraph: {
+    title: "Digipro | Creative-Tech Agency",
+    description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
+    type: "website",
+    url: "https://digital-production.vercel.app",
+    siteName: "Digipro International",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digipro | Creative-Tech Agency",
+    description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
+  },
+};
 
 export default function Home() {
-  const [showIntro, setShowIntro] = useState(false);
-
-  useEffect(() => {
-    // This only runs on the Home page mount
-    // The IntroLoader itself handles the global played flag
-    setShowIntro(true);
-  }, []);
-
-  return (
-    <div className="flex flex-col">
-      {showIntro && <IntroLoader />}
-      <Hero />
-    </div>
-  );
+  return <HomeClient />;
 }

@@ -4,6 +4,19 @@ import PortfolioGrid from "@/components/PortfolioGrid";
 export const metadata: Metadata = {
   title: "Work | Digipro Cinematic Portfolio",
   description: "Explore our filterable case study grid showcasing high-end video production and digital solutions.",
+  alternates: { canonical: "https://digital-production.vercel.app/work" },
+  openGraph: {
+    title: "Work | Digipro Cinematic Portfolio",
+    description: "Explore our filterable case study grid showcasing high-end video production and digital solutions.",
+    type: "website",
+    url: "https://digital-production.vercel.app/work",
+    siteName: "Digipro International",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Work | Digipro Cinematic Portfolio",
+    description: "Explore our filterable case study grid showcasing high-end video production and digital solutions.",
+  },
 };
 
 export default function WorkPage() {
@@ -16,13 +29,14 @@ export default function WorkPage() {
           A curated selection of our most impactful work across cinematic video production and innovative digital experiences.
         </p>
       </header>
-      
+
+      <h2 className="sr-only">Featured Case Studies</h2>
       <PortfolioGrid />
 
       <footer className="mt-32 pt-20 border-t border-border flex justify-between items-center">
         <p className="text-[10px] uppercase tracking-widest font-bold text-muted">Ready to start your legacy?</p>
         <a href="/contact" className="text-xs font-bold uppercase tracking-widest italic group flex items-center">
-          Let's talk 
+          Let's talk
           <span className="ml-4 w-8 h-px bg-accent group-hover:w-12 transition-all"></span>
         </a>
       </footer>

@@ -35,11 +35,13 @@ export default function Hero() {
         <video
           ref={videoRef}
           className={`w-full h-full object-cover transition-opacity duration-2000 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          autoPlay
           muted
           loop
           playsInline
+          aria-hidden="true"
           onLoadedData={() => setIsVideoLoaded(true)}
-          preload="auto"
+          preload="metadata"
           poster="https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=2000"
         >
           <source src="https://assets.mixkit.co/videos/preview/mixkit-minimalist-modern-architecture-4235-large.mp4" type="video/mp4" />

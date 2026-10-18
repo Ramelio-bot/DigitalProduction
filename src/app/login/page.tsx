@@ -46,6 +46,7 @@ export default function LoginPage() {
         </div>
 
         <form onSubmit={handleLogin} className="space-y-8 mt-12">
+          <h2 className="sr-only">Authentication Form</h2>
           {/* We only really need a passcode for this exclusive setup */}
           <div className="space-y-2">
             <label className="text-[10px] font-bold uppercase tracking-widest text-muted" htmlFor="password">

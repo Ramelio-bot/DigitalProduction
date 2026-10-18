@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Studio | Digipro Cinematic & Digital Studio",
   description: "Explore the core, methodology, and journey of Digipro. Founded in 2025.",
+  alternates: { canonical: "https://digital-production.vercel.app/studio" },
+  openGraph: {
+    title: "Studio | Digipro Cinematic & Digital Studio",
+    description: "Explore the core, methodology, and journey of Digipro. Founded in 2025.",
+    type: "website",
+    url: "https://digital-production.vercel.app/studio",
+    siteName: "Digipro International",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Studio | Digipro Cinematic & Digital Studio",
+    description: "Explore the core, methodology, and journey of Digipro. Founded in 2025.",
+  },
 };
 
 export default function StudioPage() {
@@ -27,11 +41,15 @@ export default function StudioPage() {
         {/* Section 1: The Core */}
         <section className="mb-40 lg:mb-64 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
           <div className="lg:col-span-5 order-2 lg:order-1">
-             <div className="aspect-[4/5] bg-white hairline-border p-2 grayscale hover:grayscale-0 transition-all duration-1000">
-               <img 
+             <div className="aspect-[4/5] bg-white hairline-border p-2 grayscale hover:grayscale-0 transition-all duration-1000 relative">
+               <Image 
                  src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1200" 
                  alt="Cinematic Laboratory" 
-                 className="w-full h-full object-cover" 
+                 width={800}
+                 height={1000}
+                 className="w-full h-full object-cover"
+                 loading="lazy"
+                 quality={80}
                />
              </div>
           </div>
@@ -60,22 +78,26 @@ export default function StudioPage() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
                 <div className="space-y-4">
-                  <h4 className="text-[10px] uppercase tracking-widest font-bold border-b border-border pb-2">Ground Units</h4>
+                  <h3 className="text-[10px] uppercase tracking-widest font-bold border-b border-border pb-2">Ground Units</h3>
                   <p className="text-sm">Handheld & Tripod: For an intimate, organic, and classically stable approach.</p>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="text-[10px] uppercase tracking-widest font-bold border-b border-border pb-2">Aerial & Motion</h4>
+                  <h3 className="text-[10px] uppercase tracking-widest font-bold border-b border-border pb-2">Aerial & Motion</h3>
                   <p className="text-sm">Gimbal & Drone: Providing smooth dynamic motion and grand aerial perspectives.</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="lg:col-span-5">
-            <div className="aspect-square bg-white hairline-border p-2">
-               <img 
+            <div className="aspect-square bg-white hairline-border p-2 relative">
+               <Image 
                  src="https://images.unsplash.com/photo-1542315193666-68620247697b?auto=format&fit=crop&q=80&w=1200" 
                  alt="Cinematic Equipment" 
-                 className="w-full h-full object-cover grayscale" 
+                 width={800}
+                 height={800}
+                 className="w-full h-full object-cover grayscale"
+                 loading="lazy"
+                 quality={80}
                />
             </div>
           </div>
@@ -83,8 +105,8 @@ export default function StudioPage() {
 
         {/* Section 3: Narrative Edge */}
         <section className="mb-40 lg:mb-64 text-center max-w-4xl mx-auto space-y-16">
-          <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-muted">Narrative Edge</span>
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif italic leading-tight tracking-tighter">Research-Driven Storytelling.</h2>
+          <h2 className="text-[10px] uppercase tracking-[0.5em] font-bold text-muted">Narrative Edge</h2>
+          <h3 className="text-5xl md:text-7xl lg:text-8xl font-serif italic leading-tight tracking-tighter">Research-Driven Storytelling.</h3>
           <div className="space-y-10 text-xl text-muted leading-relaxed">
             <p>
               Visuals without a strong narrative are merely a collection of images. At Digipro, we conduct deep research to provide a "soul" for every project, especially in elevating cultural and historical values.
@@ -115,7 +137,7 @@ export default function StudioPage() {
                 <div key={item.title} className="group flex items-start gap-8">
                   <span className="text-[10px] font-bold text-muted mt-1">0{i+1}</span>
                   <div className="space-y-4">
-                    <h4 className="text-xs font-bold uppercase tracking-widest group-hover:italic transition-all">{item.title}</h4>
+                    <h3 className="text-xs font-bold uppercase tracking-widest group-hover:italic transition-all">{item.title}</h3>
                     <p className="text-sm text-muted leading-relaxed max-w-sm">{item.desc}</p>
                   </div>
                 </div>
