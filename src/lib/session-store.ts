@@ -10,6 +10,5 @@ const globalForSessions = globalThis as unknown as {
 export const sessions =
   globalForSessions.digiproSessions ?? new Map<string, SessionData>();
 
-if (process.env.NODE_ENV !== "production") {
-  globalForSessions.digiproSessions = sessions;
-}
+// Always persist to globalThis — required for serverless (Vercel)
+globalForSessions.digiproSessions = sessions;
