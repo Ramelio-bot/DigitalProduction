@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 const services = [
   {
@@ -32,6 +32,7 @@ const services = [
 
 export default function CapabilitiesClient() {
   const [activeService, setActiveService] = useState<string | null>(null);
+  const shouldReduceMotion = useReducedMotion();
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-20">
@@ -67,9 +68,9 @@ export default function CapabilitiesClient() {
                 <AnimatePresence>
                   {activeService === service.id && (
                     <motion.ul
-                      initial={{ opacity: 0, height: 0 }}
+                      initial={shouldReduceMotion ? false : { opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
+                      exit={shouldReduceMotion ? undefined : { opacity: 0, height: 0 }}
                       className="grid grid-cols-2 gap-4"
                     >
                       {service.subServices.map((sub) => (
@@ -88,10 +89,10 @@ export default function CapabilitiesClient() {
             <AnimatePresence>
               {activeService === service.id && (
                 <motion.div
-                  initial={{ x: "-100%" }}
+                  initial={shouldReduceMotion ? false : { x: "-100%" }}
                   animate={{ x: "0%" }}
-                  exit={{ x: "100%" }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  exit={shouldReduceMotion ? undefined : { x: "100%" }}
+                  transition={{ duration: shouldReduceMotion ? 0 : 0.6, ease: "easeInOut" }}
                   className="absolute inset-0 bg-[#F9F9F9] -z-0"
                 />
               )}

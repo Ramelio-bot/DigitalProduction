@@ -11,11 +11,20 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://digital-production.vercel.app/studio",
     siteName: "Digipro International",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200",
+        width: 1200,
+        height: 630,
+        alt: "Digipro International — Studio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Studio | Digipro Cinematic & Digital Studio",
     description: "Explore the core, methodology, and journey of Digipro. Founded in 2025.",
+    images: ["https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200"],
   },
 };
 

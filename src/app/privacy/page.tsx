@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Digipro",
   description: "Digipro International Privacy Policy.",
   alternates: { canonical: "https://digital-production.vercel.app/privacy" },
+  robots: "noindex, nofollow",
 };
 
 export default function PrivacyPage() {

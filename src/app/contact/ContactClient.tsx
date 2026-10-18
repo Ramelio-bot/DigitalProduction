@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function ContactClient() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const shouldReduceMotion = useReducedMotion();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -49,7 +50,7 @@ export default function ContactClient() {
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-muted">Project Inquiry</h2>
           {status === "success" ? (
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               className="p-12 hairline-border bg-white flex flex-col items-center text-center"
             >

@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,7 +35,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
-          className={`w-full h-full object-cover transition-opacity duration-2000 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`w-full h-full object-cover transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
           autoPlay
           muted
           loop
@@ -52,36 +53,36 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: shouldReduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] }}
           className="space-y-12"
         >
           <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-accent block mb-8">
             Creative-Tech Excellence
           </span>
-          
+
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif leading-[0.85] text-balance">
             Crafting Digital <span className="italic">Monuments</span> for Defining Lives.
           </h1>
-          
+
           <p className="text-muted text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed font-sans font-light">
             Video Production • Photography • App Development • Web Solutions
           </p>
 
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ opacity: shouldReduceMotion ? 1 : 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 1 }}
+            transition={{ delay: shouldReduceMotion ? 0 : 0.8, duration: 1 }}
             className="pt-12"
           >
-            <Link 
-              href="/work" 
-              className="group relative inline-flex items-center space-x-6 px-16 py-8 bg-accent text-white interactable hover:shadow-2xl transition-all duration-500 overflow-hidden"
+            <Link
+              href="/work"
+              className="group relative inline-flex items-center space-x-6 px-16 py-8 bg-accent text-white hover:shadow-2xl transition-all duration-500 overflow-hidden"
             >
               <span className="relative z-10 text-xs uppercase tracking-[0.4em] font-bold">Explore Our Work</span>
               <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-2 transition-transform duration-500" />
-              <motion.div 
+              <motion.div
                 className="absolute inset-0 bg-muted -z-0"
                 initial={{ x: "-100%" }}
                 whileHover={{ x: 0 }}

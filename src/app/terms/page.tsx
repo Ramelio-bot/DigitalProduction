@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Terms of Service | Digipro",
   description: "Digipro International Terms of Service.",
   alternates: { canonical: "https://digital-production.vercel.app/terms" },
+  robots: "noindex, nofollow",
 };
 
 export default function TermsPage() {
