@@ -4,6 +4,7 @@ All notable changes to the Digipro Web project will be documented in this file.
 
 ## [Unreleased] - 2026-11-10
 ### Added
+- **Master Rules Locked (v2.0)**: Permanently locked the 3-post-per-day cadence (12:00, 16:30, 19:30 WIB), 72-Hour Repliz rolling queue architecture, Digipro Instagram exclusivity (`6af1ee41fc43f81b786e0de7`), 45-post sequence across folders Gambar 1-5, and permanent Vercel CDN asset hosting in plugin master rules.
 - **Repliz 72-Hour Batch 1 Rolling Dispatch**: Deployed 9 media assets to `public/instagram/batch_1/` on Vercel CDN and scheduled all 9 posts of `Gambar_1` to Repliz for Digipro Instagram (`6af1ee41fc43f81b786e0de7` / `@digipro.salatiga`) spanning Tuesday 10 Nov to Thursday 12 Nov at 12:00, 16:30, and 19:30 WIB. All items verified `< 67.0h` compliant with the strict 72-hour ceiling.
 
 ## [Unreleased] - 2026-11-09
