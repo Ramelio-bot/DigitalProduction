@@ -31,11 +31,21 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#FAFAFA]">
-      {/* Cinematic Video Background */}
+      {/* Cinematic Media Background */}
       <div className="absolute inset-0 z-0">
+        {/* Base Fallback Image: Always visible immediately, eliminating any white screen gap */}
+        <img
+          src="https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=2000"
+          alt="Cinematic architectural background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Video stream overlay: smoothly fades in over the image when ready */}
         <video
           ref={videoRef}
-          className={`w-full h-full object-cover transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            isVideoLoaded ? "opacity-100" : "opacity-0"
+          }`}
           autoPlay
           muted
           loop
@@ -43,19 +53,22 @@ export default function Hero() {
           aria-hidden="true"
           onLoadedData={() => setIsVideoLoaded(true)}
           preload="metadata"
-          poster="https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=2000"
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-minimalist-modern-architecture-4235-large.mp4" type="video/mp4" />
+          <source
+            src="https://assets.mixkit.co/videos/preview/mixkit-minimalist-modern-architecture-4235-large.mp4"
+            type="video/mp4"
+          />
         </video>
-        {/* Soft White Overlay for Text Clarity */}
-        <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
+
+        {/* Soft White Overlay for Text Contrast */}
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
         <motion.div
-          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 40 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: shouldReduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: shouldReduceMotion ? 0 : 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="space-y-12"
         >
           <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-accent block mb-8">
@@ -71,9 +84,8 @@ export default function Hero() {
           </p>
 
           <motion.div
-            initial={{ opacity: shouldReduceMotion ? 1 : 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
-            transition={{ delay: shouldReduceMotion ? 0 : 0.8, duration: 1 }}
             className="pt-12"
           >
             <Link

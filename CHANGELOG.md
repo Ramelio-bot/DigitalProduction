@@ -16,6 +16,11 @@ All notable changes to the Digipro Web project will be documented in this file.
 - **Contact & Brand Alignment**: Updated direct communication channels to `digiprosalatiga@gmail.com` and studio location to `Salatiga, Central Java, Indonesia` with the motto `CREATE. DEVELOP. INNOVATE.`.
 
 ### Fixed
+- **Permanent Fix for Hero White Screen Flashes**:
+  - Removed blocking 2.5s `IntroLoader` from `src/app/HomeClient.tsx` that previously rendered a massive `fixed inset-0` white screen overlay across the viewport.
+  - Set `initial={false}` on `src/components/Hero.tsx` text container and CTA button, ensuring server-rendered HTML delivers `opacity: 1` instantly without waiting for Framer Motion client-side hydration.
+  - Added an always-visible base architectural poster image (`<img />`) underneath the video background in `Hero.tsx`, eliminating any white gap while waiting for third-party video chunks to load.
+  - Optimized `src/components/PageTransition.tsx` to `mode="popLayout"` and reduced duration to `0.2s`, eliminating route-to-route fadeout blackout gaps.
 - **Confidential Project Purge**: Ensured project "KIDA" is completely omitted and protected from public exposure.
 - **White Screen of Death**: Restored `'unsafe-inline'` and `'unsafe-eval'` to `script-src` in `next.config.ts`. The previously enforced hash-only CSP blocked all Next.js inline streaming scripts (`self.__next_f.push`), preventing React hydration and locking the page at `opacity: 0`.
 - **PageTransition SSR Flash**: Set `initial={false}` in `src/components/PageTransition.tsx` to prevent server-side HTML from rendering with `opacity: 0` before hydration.
