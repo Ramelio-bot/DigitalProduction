@@ -4,6 +4,9 @@ All notable changes to the Digipro Web project will be documented in this file.
 
 ## [Unreleased] - 2026-11-10
 ### Fixed
+- **Cinematic Portfolio Placeholder Reversion**:
+  - Replaced temporary website development banners on project 07 (*Bicara Rasa Bicara Sejarah*) and project 08 (*Serial Sejarah AI: Jejak Tokoh*) with self-hosted cinematic and culinary documentary assets (`public/portfolio/bicara-rasa.jpg` and `public/portfolio/serial-sejarah.jpg`).
+  - Removed website mockup flyers from cinematic video case study cards pending original video production deliverables from user.
 - **Hero Background Self-Hosting & 404/403 Dead Link Elimination**:
   - Replaced dead external Unsplash image (`photo-1492691523567-6170c81cb3d3` returning HTTP 404 Not Found) and blocked Mixkit video stream (returning HTTP 403 Forbidden to CloudFront Indonesian edge nodes) with a self-hosted, high-resolution architectural monument asset (`public/hero-bg.jpg`, 2000x1333, 519 KB).
   - Permanently eliminated the broken image icon (`[icon] Cinematic architectural background`) and blank `#FAFAFA` white background in `src/components/Hero.tsx`.
