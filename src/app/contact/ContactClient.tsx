@@ -135,7 +135,7 @@ export default function ContactClient() {
               <p className="text-[10px] uppercase tracking-widest text-muted mb-6">Discovery Call</p>
               <h3 className="text-2xl mb-8">Schedule a 15-min Session</h3>
               <a 
-                href="mailto:hello@digipro.tech?subject=Discovery%20Call%20Booking"
+                href="mailto:digiprosalatiga@gmail.com?subject=Discovery%20Call%20Booking"
                 className="px-8 py-4 border border-border text-[10px] uppercase tracking-widest font-bold hover:bg-accent hover:text-white transition-all inline-block"
               >
                 Book Calendar
@@ -146,11 +146,11 @@ export default function ContactClient() {
           <div className="grid grid-cols-2 gap-12">
             <div>
               <h3 className="text-[10px] uppercase tracking-widest font-bold text-muted mb-4">Direct Contact</h3>
-              <p className="text-lg">hello@digipro.tech</p>
+              <p className="text-base font-medium break-all">digiprosalatiga@gmail.com</p>
             </div>
             <div>
-              <h3 className="text-[10px] uppercase tracking-widest font-bold text-muted mb-4">Global Reach</h3>
-              <p className="text-lg">Remote / Distributed</p>
+              <h3 className="text-[10px] uppercase tracking-widest font-bold text-muted mb-4">Base & Reach</h3>
+              <p className="text-base font-medium">Salatiga, Central Java • Remote Worldwide</p>
             </div>
           </div>
         </div>

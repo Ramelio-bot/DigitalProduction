@@ -10,7 +10,7 @@ const jsonLd = JSON.stringify({
   foundingDate: "2025",
   contactPoint: {
     "@type": "ContactPoint",
-    email: "hello@digipro.tech",
+    email: "digiprosalatiga@gmail.com",
     contactType: "sales",
   },
 });

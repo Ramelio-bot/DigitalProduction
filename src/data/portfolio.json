@@ -1,38 +1,74 @@
 [
   {
     "id": "01",
-    "title": "Aesthetic Real Estate",
-    "category": "Cinematic Video",
-    "type": "video",
-    "thumbnail": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-2465-large.mp4",
-    "shortDescription": "Cinematic showcase for luxury real estate properties in London."
+    "title": "Portal Web UT Salatiga",
+    "category": "Web & Software",
+    "type": "digital",
+    "client": "Universitas Terbuka Salatiga",
+    "year": "2025",
+    "thumbnail": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-his-laptop-3145-large.mp4",
+    "shortDescription": "Pusat informasi publik dan gerbang pendaftaran mahasiswa baru. Antarmuka modern, responsif, dan dioptimalkan untuk lalu lintas tinggi.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
   {
     "id": "02",
-    "title": "Minimalist E-Commerce",
-    "category": "Web Design / App",
+    "title": "Aplikasi Manajemen UT",
+    "category": "Web & Software",
     "type": "digital",
-    "thumbnail": "https://images.unsplash.com/photo-1491897554428-130a60dd4757?auto=format&fit=crop&q=80&w=1200",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-his-laptop-3145-large.mp4",
-    "shortDescription": "High-performance digital store for a premium fashion brand."
+    "client": "Universitas Terbuka Salatiga",
+    "year": "2025",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-office-building-with-glass-facade-reflecting-the-sky-4234-large.mp4",
+    "shortDescription": "Sistem otomatisasi operasional administrasi dan keuangan terpadu, mengurangi risiko human error hingga 90%.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
   {
     "id": "03",
-    "title": "Corporate Identity 2026",
-    "category": "Brand / Photo",
-    "type": "photo",
-    "thumbnail": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-office-building-with-glass-facade-reflecting-the-sky-4234-large.mp4",
-    "shortDescription": "Complete brand overhaul and editorial photography for a tech startup."
+    "title": "Bicara Rasa Bicara Sejarah",
+    "category": "Cinematic & AI",
+    "type": "video",
+    "client": "Digipro Documentary Initiative",
+    "year": "2025",
+    "thumbnail": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-cinematic-view-of-a-lake-and-mountains-2467-large.mp4",
+    "shortDescription": "Serial dokumenter sinematik yang mengeksplorasi nilai sejarah, riset budaya, dan akulturasi kuliner nusantara.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
   {
     "id": "04",
-    "title": "Travel Documentary",
-    "category": "Cinematic Video",
+    "title": "Serial Sejarah AI: Jejak Tionghoa",
+    "category": "Cinematic & AI",
     "type": "video",
-    "thumbnail": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1200",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-cinematic-view-of-a-lake-and-mountains-2467-large.mp4",
-    "shortDescription": "Breathtaking handheld and tripod cinematography capturing the essence of the Swiss Alps."
+    "client": "Historical AI Production",
+    "year": "2025",
+    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-minimalist-modern-architecture-4235-large.mp4",
+    "shortDescription": "Seri 10 episode animasi dan video AI 1-menit mengangkat biografi dan narasi tokoh bersejarah Tionghoa-Indonesia.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
+  },
+  {
+    "id": "05",
+    "title": "Mie Ayam Sutra",
+    "category": "Photo & Branding",
+    "type": "photo",
+    "client": "Mie Ayam Sutra",
+    "year": "2025",
+    "thumbnail": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-2465-large.mp4",
+    "shortDescription": "Commercial food photography dengan teknik High-Frame-Rate dan color grading presisi untuk mendongkrak konversi digital.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
+  },
+  {
+    "id": "06",
+    "title": "Visual Identity: Anugrah Tani Muda",
+    "category": "Photo & Branding",
+    "type": "photo",
+    "client": "Anugrah Tani Muda",
+    "year": "2025",
+    "thumbnail": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200",
+    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-2465-large.mp4",
+    "shortDescription": "Pengembangan identitas merek media tanam eceng gondok dari nol, desain kemasan produk ramah lingkungan, dan strategi marketplace.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   }
 ]

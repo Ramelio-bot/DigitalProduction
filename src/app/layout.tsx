@@ -103,8 +103,11 @@ export default function RootLayout({
                   <Link href="/login" className="cursor-default text-inherit hover:text-inherit opacity-90 transition-opacity" title="Restricted Area">.</Link>
                 </div>
                 <p className="text-muted max-w-sm text-sm leading-relaxed">
-                  A high-end creative agency specializing in cinematic video production and premium digital solutions for international brands.
+                  Creative media & technology agency based in Salatiga, Central Java. Blending cinematic visual storytelling with modern software engineering.
                 </p>
+                <div className="pt-2 text-[10px] uppercase tracking-[0.25em] font-bold text-accent">
+                  CREATE. DEVELOP. INNOVATE.
+                </div>
               </div>
 
               <div className="space-y-8">
