@@ -167,13 +167,7 @@ export default function StudioPage() {
             <p className="text-accent font-bold uppercase text-[10px] tracking-[0.3em]">Featured: "Bicara Rasa Bicara Sejarah" & "Serial Sejarah AI"</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 text-left">
-            <div className="p-8 bg-white hairline-border space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-widest text-accent">KIDA (3D Mascot)</h3>
-              <p className="text-xs text-muted leading-relaxed">
-                A 3D digital mascot inspired by the endemic Kidangan bird, crafted as an official digital tourism ambassador for Salatiga.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 text-left max-w-3xl mx-auto">
             <div className="p-8 bg-white hairline-border space-y-3">
               <h3 className="text-xs font-bold uppercase tracking-widest text-accent">Learning Library</h3>
               <p className="text-xs text-muted leading-relaxed">
