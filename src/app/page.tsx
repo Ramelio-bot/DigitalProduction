@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     siteName: "Digipro International",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200",
-        width: 1200,
-        height: 630,
+        url: "https://digital-production.vercel.app/hero-bg.jpg",
+        width: 2000,
+        height: 1333,
         alt: "Digipro International — Creative-Tech Agency",
       },
     ],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Digipro | Creative-Tech Agency",
     description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
-    images: ["https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200"],
+    images: ["https://digital-production.vercel.app/hero-bg.jpg"],
   },
 };
 

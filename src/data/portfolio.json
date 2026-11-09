@@ -8,7 +8,7 @@
     "year": "2025",
     "thumbnail": "/portfolio/pmb-ut.jpg",
     "screenshot": "/portfolio/shots/pmb-ut-1.png",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-his-laptop-3145-large.mp4",
+    "videoPreview": "",
     "shortDescription": "Pusat informasi publik dan gerbang pendaftaran mahasiswa baru. Antarmuka modern, responsif, dan dioptimalkan untuk lalu lintas tinggi.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -21,7 +21,7 @@
     "year": "2025",
     "thumbnail": "/portfolio/keuangan-ut.jpg",
     "screenshot": "/portfolio/shots/keuangan-ut-1.png",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-office-building-with-glass-facade-reflecting-the-sky-4234-large.mp4",
+    "videoPreview": "",
     "shortDescription": "Sistem otomatisasi operasional administrasi dan keuangan terpadu, mengurangi risiko human error hingga 90%.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -34,7 +34,7 @@
     "year": "2025",
     "thumbnail": "/portfolio/heca.jpg",
     "screenshot": "/portfolio/shots/heca-1.png",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-his-laptop-3145-large.mp4",
+    "videoPreview": "",
     "shortDescription": "Platform web e-commerce fashion modern dengan currency switcher dinamis (USD/IDR), scroll aesthetic mewah, dan katalog interaktif.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -47,7 +47,7 @@
     "year": "2025",
     "thumbnail": "/portfolio/luminaire.jpg",
     "screenshot": "/portfolio/shots/luminaire-1.png",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-2465-large.mp4",
+    "videoPreview": "",
     "shortDescription": "Toko online minimalist lighting dan interior lifestyle dengan performa tinggi, animasi mikro yang halus, dan alur checkout cepat.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -60,7 +60,7 @@
     "year": "2025",
     "thumbnail": "/portfolio/my-invoice.png",
     "screenshot": "/portfolio/shots/my-invoice-1.png",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-office-building-with-glass-facade-reflecting-the-sky-4234-large.mp4",
+    "videoPreview": "",
     "shortDescription": "Platform billing B2B dan generator invoice digital otomatis dengan tipografi elegan, ekspor PDF instan, dan tautan pembayaran online.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -73,7 +73,7 @@
     "year": "2025",
     "thumbnail": "/portfolio/global-pdf.jpg",
     "screenshot": "/portfolio/shots/global-pdf-1.png",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-office-building-with-glass-facade-reflecting-the-sky-4234-large.mp4",
+    "videoPreview": "",
     "shortDescription": "Engine pembuat dokumen PDF enterprise berkecepatan tinggi untuk otomatisasi pelaporan berkala dan ekspor data berskala besar.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -84,8 +84,9 @@
     "type": "video",
     "client": "Digipro Documentary Initiative",
     "year": "2025",
-    "thumbnail": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1200",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-cinematic-view-of-a-lake-and-mountains-2467-large.mp4",
+    "thumbnail": "/portfolio/mie-ayam-sutra.jpg",
+    "screenshot": "/portfolio/shots/mie-ayam-1.png",
+    "videoPreview": "",
     "shortDescription": "Serial dokumenter sinematik yang mengeksplorasi nilai sejarah, riset budaya, dan akulturasi kuliner nusantara.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -96,8 +97,9 @@
     "type": "video",
     "client": "Historical AI Production",
     "year": "2025",
-    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1200",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-minimalist-modern-architecture-4235-large.mp4",
+    "thumbnail": "/portfolio/digipro-platform.jpg",
+    "screenshot": "/portfolio/shots/digipro-1.png",
+    "videoPreview": "",
     "shortDescription": "Seri 10 episode animasi dan video AI 1-menit mengangkat biografi dan narasi tokoh bersejarah Tionghoa-Indonesia.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -110,7 +112,7 @@
     "year": "2025",
     "thumbnail": "/portfolio/mie-ayam-sutra.jpg",
     "screenshot": "/portfolio/shots/mie-ayam-1.png",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-2465-large.mp4",
+    "videoPreview": "",
     "shortDescription": "Commercial food photography dengan teknik High-Frame-Rate dan color grading presisi untuk mendongkrak konversi digital.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -121,8 +123,9 @@
     "type": "photo",
     "client": "Anugrah Tani Muda",
     "year": "2025",
-    "thumbnail": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200",
-    "videoPreview": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-2465-large.mp4",
+    "thumbnail": "/portfolio/luminaire.jpg",
+    "screenshot": "/portfolio/shots/luminaire-1.png",
+    "videoPreview": "",
     "shortDescription": "Pengembangan identitas merek media tanam eceng gondok dari nol, desain kemasan produk ramah lingkungan, dan strategi marketplace.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   }

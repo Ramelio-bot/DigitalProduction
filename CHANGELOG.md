@@ -3,6 +3,14 @@
 All notable changes to the Digipro Web project will be documented in this file.
 
 ## [Unreleased] - 2026-11-10
+### Fixed
+- **Hero Background Self-Hosting & 404/403 Dead Link Elimination**:
+  - Replaced dead external Unsplash image (`photo-1492691523567-6170c81cb3d3` returning HTTP 404 Not Found) and blocked Mixkit video stream (returning HTTP 403 Forbidden to CloudFront Indonesian edge nodes) with a self-hosted, high-resolution architectural monument asset (`public/hero-bg.jpg`, 2000x1333, 519 KB).
+  - Permanently eliminated the broken image icon (`[icon] Cinematic architectural background`) and blank `#FAFAFA` white background in `src/components/Hero.tsx`.
+  - Configured `display: "swap"` on Google Fonts (`Cormorant_Garamond` and `Inter`) in `src/app/layout.tsx` to prevent Flash of Invisible Text (FOIT) on initial page load.
+  - Removed obsolete preconnect tags to `images.unsplash.com` and `assets.mixkit.co` from `<head>`.
+  - Purged broken 403 `videoPreview` URLs from `src/data/portfolio.json` to prevent console network errors on card hover.
+
 ### Added
 - **Master Rules Locked (v2.0)**: Permanently locked the 3-post-per-day cadence (12:00, 16:30, 19:30 WIB), 72-Hour Repliz rolling queue architecture, Digipro Instagram exclusivity (`6af1ee41fc43f81b786e0de7`), 45-post sequence across folders Gambar 1-5, and permanent Vercel CDN asset hosting in plugin master rules.
 - **Repliz 72-Hour Batch 1 Rolling Dispatch**: Deployed 9 media assets to `public/instagram/batch_1/` on Vercel CDN and scheduled all 9 posts of `Gambar_1` to Repliz for Digipro Instagram (`6af1ee41fc43f81b786e0de7` / `@digipro.salatiga`) spanning Tuesday 10 Nov to Thursday 12 Nov at 12:00, 16:30, and 19:30 WIB. All items verified `< 67.0h` compliant with the strict 72-hour ceiling.

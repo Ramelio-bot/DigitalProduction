@@ -11,11 +11,13 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -36,10 +38,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200",
-        width: 1200,
-        height: 630,
-        alt: "Digipro International",
+        url: "https://digital-production.vercel.app/hero-bg.jpg",
+        width: 2000,
+        height: 1333,
+        alt: "Digipro International — Creative-Tech Agency",
       },
     ],
   },
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Digipro | Creative-Tech Agency",
     description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
-    images: ["https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200"],
+    images: ["https://digital-production.vercel.app/hero-bg.jpg"],
   },
 };
 
@@ -59,8 +61,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable} h-full antialiased`}>
       <head>
-        <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="preconnect" href="https://assets.mixkit.co" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLdContent }}
