@@ -4,6 +4,7 @@ All notable changes to the Digipro Web project will be documented in this file.
 
 ## [Unreleased] - 2026-11-09
 ### Added
+- **Repliz Multi-Account Integration**: Synchronized Repliz automation for Digipro Instagram (`6af1ee41fc43f81b786e0de7` / `@digipro.salatiga`) alongside Daniel Raditya LinkedIn (`6aec1542fc43f81b78597b27` / `@danielraditya`) with access key `6921259090`. Verified connection via live API audit script.
 - **Real Portfolio Screenshots Integration**: Imported authentic project screenshots from `E:\Potrto\Fiver` into `public/portfolio/` and `public/portfolio/shots/` covering PMB UT, Keuangan UT, Heca Fashion Store, Luminaire Living, MyInvoice SaaS, Global PDF Engine, and Mie Ayam Sutra.
 - **Interactive Screenshot Lightbox Modal**: Built an accessible, animated modal preview in `src/components/PortfolioGrid.tsx` allowing visitors to click any card to inspect full high-resolution desktop UI screenshots, client info, descriptions, and direct Drive links with Escape-key and body scroll lock.
 - **Portfolio Expansion (10 Case Studies)**: Updated `src/data/portfolio.json` with 10 real projects categorized across Web & Software, Cinematic & AI, and Photo & Branding.
