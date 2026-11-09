@@ -2,6 +2,10 @@
 
 All notable changes to the Digipro Web project will be documented in this file.
 
+## [Unreleased] - 2026-11-10
+### Added
+- **Repliz 72-Hour Batch 1 Rolling Dispatch**: Deployed 9 media assets to `public/instagram/batch_1/` on Vercel CDN and scheduled all 9 posts of `Gambar_1` to Repliz for Digipro Instagram (`6af1ee41fc43f81b786e0de7` / `@digipro.salatiga`) spanning Tuesday 10 Nov to Thursday 12 Nov at 12:00, 16:30, and 19:30 WIB. All items verified `< 67.0h` compliant with the strict 72-hour ceiling.
+
 ## [Unreleased] - 2026-11-09
 ### Added
 - **Repliz Automation Target Locked to Digipro Exclusively**: Configured Digipro Official Instagram (`6af1ee41fc43f81b786e0de7` / `@digipro.salatiga`) as the sole active account for auto-posting and Repliz engagement automation. Removed LinkedIn from the publishing pipeline as directed.
