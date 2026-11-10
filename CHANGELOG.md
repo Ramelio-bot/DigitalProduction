@@ -4,6 +4,9 @@ All notable changes to the Digipro Web project will be documented in this file.
 
 ## [Unreleased] - 2026-11-10
 ### Fixed
+- **Purged Defective Repliz Instagram Queue**:
+  - Cancelled and deleted all 6 remaining pending scheduled posts from `Gambar_1` on Repliz for Digipro Instagram (`6af1ee41fc43f81b786e0de7` / `@digipro.salatiga`) via `DELETE /public/schedule/{id}`.
+  - Verified pending queue is completely clean (0 pending posts remaining) to prevent defective visual assets from publishing.
 - **Cinematic Portfolio Placeholder Reversion**:
   - Replaced temporary website development banners on project 07 (*Bicara Rasa Bicara Sejarah*) and project 08 (*Serial Sejarah AI: Jejak Tokoh*) with self-hosted cinematic and culinary documentary assets (`public/portfolio/bicara-rasa.jpg` and `public/portfolio/serial-sejarah.jpg`).
   - Removed website mockup flyers from cinematic video case study cards pending original video production deliverables from user.
