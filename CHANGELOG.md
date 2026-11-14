@@ -2,6 +2,12 @@
 
 All notable changes to the Digipro Web project will be documented in this file.
 
+## [Unreleased] - 2026-11-14
+### Changed
+- **Cadence Lock Updated to 1 Post/Day (`19:30 WIB`)**: Updated `fiverr-growth-studio` Master Rules (`AGENTS.md`) and Work Controller (`SKILL.md`) to lock posting frequency at 1 post per day (`19:30 WIB / 12:30 UTC`), making each 72-hour Repliz rolling window hold 3 daily posts (`<= 72h`).
+- **Visual Standard Locked (`3:4` Still-Life Minimalism)**: Replaced defective `Gambar_1` assets in `public/instagram/batch_1/` with 9 audited `896x1200` (`3:4`) still-life & editorial images (`post-1.jpg` to `post-9.jpg`) ordered cleanly for reverse 3x3 grid upload.
+- **Repliz 72-Hour Batch 1 (Days 1-3) Dispatch**: Scheduled Posts #1–#3 (`2026-11-14` to `2026-11-16` at `19:30 WIB`) with SEO-optimized zero-emoji Indonesian captions to Digipro Instagram (`6af1ee41fc43f81b786e0de7`). Posts #4–#9 automatically held beyond 72h ceiling.
+
 ## [Unreleased] - 2026-11-10
 ### Fixed
 - **Purged Defective Repliz Instagram Queue**:
