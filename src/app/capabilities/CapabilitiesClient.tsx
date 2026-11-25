@@ -28,6 +28,18 @@ const services = [
     desc: "Intuitive mobile and desktop applications designed for performance and scale.",
     subServices: ["iOS/Android", "SaaS Platforms", "UI/UX Design", "Custom CMS"]
   },
+  {
+    id: "05",
+    title: "AI Specialist",
+    desc: "Strategic AI architecture, custom LLM integration, and intelligent agent systems built for real business workflows.",
+    subServices: ["Custom AI Agents", "LLM Integration", "RAG Systems", "AI Strategy & Consulting"]
+  },
+  {
+    id: "06",
+    title: "AI Automation",
+    desc: "End-to-end automated pipelines that eliminate repetitive operations and scale multi-platform execution.",
+    subServices: ["Workflow Pipelines", "Content Automation", "API Orchestration", "Scheduled Publishing"]
+  },
 ];
 
 export default function CapabilitiesClient() {

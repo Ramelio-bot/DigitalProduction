@@ -2,6 +2,17 @@
 
 All notable changes to the Digipro Web project will be documented in this file.
 
+## [Unreleased] - 2026-11-25
+### Added
+- **AI Specialist & AI Automation Service Pillars**:
+  - Updated hero capability strip in `src/components/Hero.tsx` to `Video Production • Photography • App Development • Web Solutions • AI Specialist • AI Automation` (`max-w-4xl` layout balance).
+  - Added capabilities `05. AI Specialist` and `06. AI Automation` with detailed sub-services in `src/app/capabilities/CapabilitiesClient.tsx` and project category options in `src/app/dashboard/projects/new/page.tsx`.
+  - Updated SEO/OpenGraph/Twitter metadata across `src/app/page.tsx`, `src/app/layout.tsx`, and `src/app/capabilities/page.tsx` (also replaced remaining dead Unsplash OG image in `capabilities/page.tsx` with `/hero-bg.jpg`).
+
+## [Unreleased] - 2026-11-15
+### Audited
+- **Repliz Queue & Open Slot Check (`@digipro.salatiga`)**: Verified Upload #1 (`6af7e16e8de0b8a7b7c92fdf`, 14 Nov 19:30 WIB) published (`success`), 2 pending schedules active (15 & 16 Nov 19:30 WIB), and 1 open slot inside the 72h window on Tuesday 17 Nov 2026 @ 19:30 WIB (`~56.7h` ahead) for Upload #4 (`post-4.jpg`).
+
 ## [Unreleased] - 2026-11-14
 ### Changed
 - **Cadence Lock Updated to 1 Post/Day (`19:30 WIB`)**: Updated `fiverr-growth-studio` Master Rules (`AGENTS.md`) and Work Controller (`SKILL.md`) to lock posting frequency at 1 post per day (`19:30 WIB / 12:30 UTC`), making each 72-hour Repliz rolling window hold 3 daily posts (`<= 72h`).

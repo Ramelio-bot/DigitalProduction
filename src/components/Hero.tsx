@@ -34,8 +34,8 @@ export default function Hero() {
             Crafting Digital <span className="italic">Monuments</span> for Defining Lives.
           </h1>
 
-          <p className="text-muted text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed font-sans font-light">
-            Video Production • Photography • App Development • Web Solutions
+          <p className="text-muted text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed font-sans font-light">
+            Video Production • Photography • App Development • Web Solutions • AI Specialist • AI Automation
           </p>
 
           <div className="pt-12">

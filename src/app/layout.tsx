@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     default: "Digipro | Creative-Tech Agency",
     template: "%s | Digipro",
   },
-  description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
+  description: "High-end international-standard agency focusing on Video Production, Photography, App Development, Web Solutions, AI Specialist, and AI Automation.",
   alternates: {
     canonical: "https://digital-production.vercel.app",
   },
   openGraph: {
     title: "Digipro | Creative-Tech Agency",
-    description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
+    description: "High-end international-standard agency focusing on Video Production, Photography, App Development, Web Solutions, AI Specialist, and AI Automation.",
     url: "https://digital-production.vercel.app",
     siteName: "Digipro International",
     type: "website",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Digipro | Creative-Tech Agency",
-    description: "High-end international-standard agency focusing on Video, Photo, Web, and App development.",
+    description: "High-end international-standard agency focusing on Video Production, Photography, App Development, Web Solutions, AI Specialist, and AI Automation.",
     images: ["https://digital-production.vercel.app/hero-bg.jpg"],
   },
 };

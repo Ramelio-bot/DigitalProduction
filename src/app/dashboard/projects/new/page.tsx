@@ -62,6 +62,8 @@ export default function NewProjectPage() {
               <option>Photography</option>
               <option>App Development</option>
               <option>Web Solutions</option>
+              <option>AI Specialist</option>
+              <option>AI Automation</option>
             </select>
           </div>
 
