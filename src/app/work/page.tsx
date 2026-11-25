@@ -4,19 +4,19 @@ import { FolderOpen, ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Work | Digipro Cinematic Portfolio",
-  description: "Explore our filterable case study grid showcasing high-end video production, digital solutions, and creative technology.",
+  description: "Explore our filterable case study grid showcasing web software engineering, AI specialist & automation systems, cinematic video production, and commercial photography.",
   alternates: { canonical: "https://digital-production.vercel.app/work" },
   openGraph: {
     title: "Work | Digipro Cinematic Portfolio",
-    description: "Explore our filterable case study grid showcasing high-end video production, digital solutions, and creative technology.",
+    description: "Explore our filterable case study grid showcasing web software engineering, AI specialist & automation systems, cinematic video production, and commercial photography.",
     type: "website",
     url: "https://digital-production.vercel.app/work",
     siteName: "Digipro International",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200",
-        width: 1200,
-        height: 630,
+        url: "https://digital-production.vercel.app/hero-bg.jpg",
+        width: 2000,
+        height: 1333,
         alt: "Digipro International — Portfolio Showcase",
       },
     ],
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Work | Digipro Cinematic Portfolio",
-    description: "Explore our filterable case study grid showcasing high-end video production, digital solutions, and creative technology.",
-    images: ["https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200"],
+    description: "Explore our filterable case study grid showcasing web software engineering, AI specialist & automation systems, cinematic video production, and commercial photography.",
+    images: ["https://digital-production.vercel.app/hero-bg.jpg"],
   },
 };
 
@@ -37,7 +37,7 @@ export default function WorkPage() {
           <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-muted block mb-6">Selected Projects</span>
           <h1 className="text-6xl md:text-9xl leading-[0.8] mb-8">Showcase<span className="italic text-accent">.</span></h1>
           <p className="text-muted text-lg max-w-xl leading-relaxed">
-            A curated portfolio across Web & Software Engineering, Cinematic AI Storytelling, and Commercial Photography.
+            A curated portfolio across Web & Software Engineering, AI Specialist & Automation Systems, Cinematic Storytelling, and Commercial Photography.
           </p>
         </div>
 

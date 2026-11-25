@@ -1,14 +1,14 @@
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
-  let body: { name?: string; email?: string; message?: string };
+  let body: { name?: string; email?: string; service?: string; message?: string };
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  const { name, email, message } = body;
+  const { name, email, service, message } = body;
 
   // Validation
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
@@ -28,7 +28,12 @@ export async function POST(request: Request) {
 
   // TODO: Wire up Resend, SendGrid, or Supabase here when ready
   // For now, log and succeed (form won't 404 anymore)
-  console.log("Contact form submission:", { name, email, message });
+  console.log("Contact form submission:", {
+    name,
+    email,
+    service: service || "Not specified",
+    message,
+  });
 
   return NextResponse.json(
     { success: true, message: "Message received. We'll respond within 24 hours." },

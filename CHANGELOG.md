@@ -4,6 +4,13 @@ All notable changes to the Digipro Web project will be documented in this file.
 
 ## [Unreleased] - 2026-11-25
 ### Added
+- **Full Website UX, Content & Conversion Upgrade**:
+  - **Mobile Navigation Drawer**: Created `src/components/Navbar.tsx` with responsive mobile drawer (`Menu`/`X` toggle), active route highlighting, and scroll-lock integration in `src/app/layout.tsx`. Also corrected footer links (`@digipro.salatiga`, `danielraditya`, `fiverr.com/ramelio`).
+  - **Homepage Conversion Sections**: Expanded `src/app/HomeClient.tsx` below `<Hero />` with 6 Core Capabilities snapshot, 4 Selected Monumental Works, and a closing Discovery Call CTA band.
+  - **`/work` Case Study & AI Expansion**: Added `AI & Automation` filter tab with item counts and tech stack / impact details inside lightbox modal (`src/components/PortfolioGrid.tsx`), added 2 new AI case studies (`#11` Enterprise AI Assistant & Streaming Hub, `#12` Multi-Platform Content & Scheduling Pipeline), replaced duplicate Project `#10` thumbnail with `public/portfolio/anugrah-tani.jpg`, and fixed dead OG image in `src/app/work/page.tsx`.
+  - **`/capabilities` Mobile Tap & SLA Upgrade**: Added tap-to-toggle expansion (`+`/`−` indicator), deliverable SLAs, and direct `Request ... ->` links routing to `/contact?service=...` in `src/app/capabilities/CapabilitiesClient.tsx`.
+  - **`/studio` Authority & Self-Hosted Media**: Fixed broken external Unsplash studio image (`studio-gear.jpg`) and self-hosted both `/studio/studio-core.jpg` and `/studio/studio-gear.jpg`, fixed dead OG image, added Founder & Executive Partner leadership cards, bilingual subtitles on testimonials, and updated Core Pillars.
+  - **`/contact` Service Routing**: Added Capability Needed selector auto-populated via `?service=...` (`Suspense`-wrapped in `src/app/contact/page.tsx`), `service` persistence in `/api/contact`, and direct Fiverr Studio / Email desk CTAs.
 - **AI Specialist & AI Automation Service Pillars**:
   - Updated hero capability strip in `src/components/Hero.tsx` to `Video Production • Photography • App Development • Web Solutions • AI Specialist • AI Automation` (`max-w-4xl` layout balance).
   - Added capabilities `05. AI Specialist` and `06. AI Automation` with detailed sub-services in `src/app/capabilities/CapabilitiesClient.tsx` and project category options in `src/app/dashboard/projects/new/page.tsx`.

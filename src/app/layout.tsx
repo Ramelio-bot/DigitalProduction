@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { jsonLdContent } from "@/lib/csp-hash";
 
@@ -75,19 +76,7 @@ export default function RootLayout({
         </a>
         <CustomCursor />
         <SmoothScroll>
-          <nav aria-label="Main navigation" className="fixed top-0 w-full z-50 glass hairline-border border-t-0 border-x-0">
-            <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-              <Link href="/" className="font-serif text-2xl font-bold tracking-[0.2em] uppercase hover:italic transition-all">
-                DIGIPRO
-              </Link>
-              <div className="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium">
-                <Link href="/work" className="hover:text-muted transition-colors">Work</Link>
-                <Link href="/capabilities" className="hover:text-muted transition-colors">Capabilities</Link>
-                <Link href="/studio" className="hover:text-muted transition-colors">Studio</Link>
-                <Link href="/contact" className="px-5 py-2 bg-accent text-white hover:bg-muted transition-colors rounded-sm">Contact</Link>
-              </div>
-            </div>
-          </nav>
+          <Navbar />
 
           <main id="main-content" className="flex-grow pt-20">
             <PageTransition>
@@ -123,9 +112,9 @@ export default function RootLayout({
               <div className="space-y-8">
                 <h2 className="text-[10px] uppercase tracking-widest font-bold">Social</h2>
                 <ul className="space-y-4 text-[10px] font-bold uppercase tracking-widest">
-                  <li><a href="https://instagram.com/digipro" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-muted transition-colors">Instagram</a></li>
-                  <li><a href="https://linkedin.com/company/digipro" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-muted transition-colors">LinkedIn</a></li>
-                  <li><a href="https://vimeo.com/digipro" target="_blank" rel="noopener noreferrer" aria-label="Vimeo" className="hover:text-muted transition-colors">Vimeo</a></li>
+                  <li><a href="https://instagram.com/digipro.salatiga" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-muted transition-colors">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/in/danielraditya" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-muted transition-colors">LinkedIn</a></li>
+                  <li><a href="https://www.fiverr.com/ramelio" target="_blank" rel="noopener noreferrer" aria-label="Fiverr Storefront" className="hover:text-muted transition-colors">Fiverr</a></li>
                 </ul>
               </div>
             </div>

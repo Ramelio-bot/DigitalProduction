@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     siteName: "Digipro International",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200",
-        width: 1200,
-        height: 630,
+        url: "https://digital-production.vercel.app/hero-bg.jpg",
+        width: 2000,
+        height: 1333,
         alt: "Digipro International — Studio",
       },
     ],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Studio | Digipro Cinematic & Digital Studio",
     description: "Explore the core, methodology, and journey of Digipro. Founded in 2025.",
-    images: ["https://images.unsplash.com/photo-1492691523567-6170c81cb3d3?auto=format&fit=crop&q=80&w=1200"],
+    images: ["https://digital-production.vercel.app/hero-bg.jpg"],
   },
 };
 
@@ -54,13 +54,13 @@ export default function StudioPage() {
           <div className="lg:col-span-5 order-2 lg:order-1">
              <div className="aspect-[4/5] bg-white hairline-border p-2 grayscale hover:grayscale-0 transition-all duration-1000 relative">
                <Image 
-                 src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1200" 
-                 alt="Cinematic Laboratory" 
-                 width={800}
-                 height={1000}
+                 src="/studio/studio-core.jpg" 
+                 alt="Digipro Creative-Tech Studio Corridor" 
+                 width={1200}
+                 height={801}
                  className="w-full h-full object-cover"
                  loading="lazy"
-                 quality={80}
+                 quality={85}
                />
              </div>
           </div>
@@ -102,13 +102,13 @@ export default function StudioPage() {
           <div className="lg:col-span-5">
             <div className="aspect-square bg-white hairline-border p-2 relative">
                <Image 
-                 src="https://images.unsplash.com/photo-1542315193666-68620247697b?auto=format&fit=crop&q=80&w=1200" 
-                 alt="Cinematic Equipment" 
-                 width={800}
-                 height={800}
+                 src="/studio/studio-gear.jpg" 
+                 alt="Cinema Lenses and Studio Camera Equipment" 
+                 width={1200}
+                 height={1500}
                  className="w-full h-full object-cover grayscale"
                  loading="lazy"
-                 quality={80}
+                 quality={85}
                />
             </div>
           </div>
@@ -194,10 +194,13 @@ export default function StudioPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="p-12 bg-white hairline-border space-y-8 relative">
+            <div className="p-12 bg-white hairline-border space-y-6 relative">
               <span className="text-4xl font-serif italic text-accent font-bold">“</span>
-              <p className="text-base text-muted italic leading-relaxed -mt-4">
+              <p className="text-base text-foreground italic leading-relaxed -mt-4">
                 "Digipro berhasil mentransformasi sistem administrasi kami yang tadinya manual menjadi serba otomatis. Efisiensi kerja tim kami meningkat drastis."
+              </p>
+              <p className="text-xs text-muted leading-relaxed">
+                — "Digipro transformed our manual administrative workflow into a fully automated system, drastically boosting team efficiency."
               </p>
               <div className="pt-4 border-t hairline-border">
                 <p className="text-xs font-bold uppercase tracking-widest text-foreground">Kepala Divisi IT</p>
@@ -205,10 +208,13 @@ export default function StudioPage() {
               </div>
             </div>
 
-            <div className="p-12 bg-white hairline-border space-y-8 relative">
+            <div className="p-12 bg-white hairline-border space-y-6 relative">
               <span className="text-4xl font-serif italic text-accent font-bold">“</span>
-              <p className="text-base text-muted italic leading-relaxed -mt-4">
+              <p className="text-base text-foreground italic leading-relaxed -mt-4">
                 "Kualitas visual untuk video dan foto produk sangat memuaskan. Penjualan kami di platform digital naik signifikan setelah menggunakan jasa Digipro."
+              </p>
+              <p className="text-xs text-muted leading-relaxed">
+                — "The visual quality of their product videos and photography exceeded expectations—driving significant growth across our digital channels."
               </p>
               <div className="pt-4 border-t hairline-border">
                 <p className="text-xs font-bold uppercase tracking-widest text-foreground">Owner & Founder</p>
@@ -218,7 +224,39 @@ export default function StudioPage() {
           </div>
         </section>
 
-        {/* Section 6: Studio Journey & Location */}
+        {/* Section 6: Leadership & Executive Partner Network */}
+        <section className="mb-24 lg:mb-36 py-20 border-t hairline-border">
+          <div className="max-w-3xl mb-16 space-y-4">
+            <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-muted">Leadership & Authority</span>
+            <h2 className="text-4xl md:text-6xl font-serif italic">Crafted by Practitioners.</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 bg-white hairline-border space-y-4">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-accent">Founder & Lead Engineer</span>
+              <h3 className="text-xl font-serif">Daniel Raditya Donny Eryanto</h3>
+              <p className="text-xs text-muted leading-relaxed">
+                Full-stack creative technologist and Adjunct Lecturer in Visual Communication Design at Satya Wacana Christian University (UKSW), bridging visual theory with production-grade code.
+              </p>
+            </div>
+            <div className="p-8 bg-white hairline-border space-y-4">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-accent">Executive Partners</span>
+              <h3 className="text-xl font-serif">10+ Years Senior Network</h3>
+              <p className="text-xs text-muted leading-relaxed">
+                Supported by certified executive specialists across cinematography, commercial photography, business development, and AI systems architecture.
+              </p>
+            </div>
+            <div className="p-8 bg-white hairline-border space-y-4">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-accent">Award-Winning Storytelling</span>
+              <h3 className="text-xl font-serif">Film & Business Track Record</h3>
+              <p className="text-xs text-muted leading-relaxed">
+                Recognized across short-film competitions and enterprise digital initiatives—bringing cinema-level narrative discipline to every client campaign.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 7: Studio Journey & Location */}
         <section className="py-24 border-t hairline-border">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="space-y-8">
@@ -251,7 +289,7 @@ export default function StudioPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                  <span><strong>Core Pillars:</strong> Next.js, Supabase, AI Video, Cinema Rigs</span>
+                  <span><strong>Core Pillars:</strong> Next.js, Supabase, AI Agents & Automation, Cinema Rigs</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />

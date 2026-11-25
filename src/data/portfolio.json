@@ -9,6 +9,8 @@
     "thumbnail": "/portfolio/pmb-ut.jpg",
     "screenshot": "/portfolio/shots/pmb-ut-1.png",
     "videoPreview": "",
+    "techStack": ["Next.js", "Tailwind CSS", "Responsive UI", "SEO"],
+    "impact": "Streamlined new student registration portal engineered for peak enrollment traffic.",
     "shortDescription": "Pusat informasi publik dan gerbang pendaftaran mahasiswa baru. Antarmuka modern, responsif, dan dioptimalkan untuk lalu lintas tinggi.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -22,6 +24,8 @@
     "thumbnail": "/portfolio/keuangan-ut.jpg",
     "screenshot": "/portfolio/shots/keuangan-ut-1.png",
     "videoPreview": "",
+    "techStack": ["React", "PostgreSQL", "Role-Based Auth", "Automated Reporting"],
+    "impact": "Up to 90% reduction in manual financial reconciliation errors.",
     "shortDescription": "Sistem otomatisasi operasional administrasi dan keuangan terpadu, mengurangi risiko human error hingga 90%.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -35,6 +39,8 @@
     "thumbnail": "/portfolio/heca.jpg",
     "screenshot": "/portfolio/shots/heca-1.png",
     "videoPreview": "",
+    "techStack": ["Next.js", "Framer Motion", "Multi-Currency (USD/IDR)", "E-Commerce"],
+    "impact": "Editorial storefront with instant USD/IDR currency switching for international buyers.",
     "shortDescription": "Platform web e-commerce fashion modern dengan currency switcher dinamis (USD/IDR), scroll aesthetic mewah, dan katalog interaktif.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -48,6 +54,8 @@
     "thumbnail": "/portfolio/luminaire.jpg",
     "screenshot": "/portfolio/shots/luminaire-1.png",
     "videoPreview": "",
+    "techStack": ["Next.js", "TypeScript", "Core Web Vitals", "Checkout Flow"],
+    "impact": "High-conversion minimalist interior storefront with sub-second navigation.",
     "shortDescription": "Toko online minimalist lighting dan interior lifestyle dengan performa tinggi, animasi mikro yang halus, dan alur checkout cepat.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -61,6 +69,8 @@
     "thumbnail": "/portfolio/my-invoice.png",
     "screenshot": "/portfolio/shots/my-invoice-1.png",
     "videoPreview": "",
+    "techStack": ["Next.js", "SaaS Architecture", "Instant PDF Export", "Payment Links"],
+    "impact": "Zero-friction B2B digital invoicing & payment tracking workflow.",
     "shortDescription": "Platform billing B2B dan generator invoice digital otomatis dengan tipografi elegan, ekspor PDF instan, dan tautan pembayaran online.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -74,6 +84,8 @@
     "thumbnail": "/portfolio/global-pdf.jpg",
     "screenshot": "/portfolio/shots/global-pdf-1.png",
     "videoPreview": "",
+    "techStack": ["Node.js", "Headless Rendering", "Batch Export API", "Cloud Storage"],
+    "impact": "High-throughput automated document generation for enterprise periodic reporting.",
     "shortDescription": "Engine pembuat dokumen PDF enterprise berkecepatan tinggi untuk otomatisasi pelaporan berkala dan ekspor data berskala besar.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -87,6 +99,8 @@
     "thumbnail": "/portfolio/bicara-rasa.jpg",
     "screenshot": "/portfolio/bicara-rasa.jpg",
     "videoPreview": "",
+    "techStack": ["Cinema Rig", "Color Grading", "Cultural Research", "Sound Design"],
+    "impact": "Original documentary series elevating Indonesian heritage culinary narratives.",
     "shortDescription": "Serial dokumenter sinematik yang mengeksplorasi nilai sejarah, riset budaya, dan akulturasi kuliner nusantara.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -100,6 +114,8 @@
     "thumbnail": "/portfolio/serial-sejarah.jpg",
     "screenshot": "/portfolio/serial-sejarah.jpg",
     "videoPreview": "",
+    "techStack": ["Generative Video", "AI TTS Narration", "FFmpeg Compositing", "Historical Research"],
+    "impact": "10-episode 1-minute vertical documentary series engineered for multi-platform retention.",
     "shortDescription": "Seri 10 episode animasi dan video AI 1-menit mengangkat biografi dan narasi tokoh bersejarah Tionghoa-Indonesia.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -113,6 +129,8 @@
     "thumbnail": "/portfolio/mie-ayam-sutra.jpg",
     "screenshot": "/portfolio/shots/mie-ayam-1.png",
     "videoPreview": "",
+    "techStack": ["Commercial Food Photo", "HFR Video", "Color Grading", "Web Showcase"],
+    "impact": "Elevated digital conversion and brand authority across web & delivery channels.",
     "shortDescription": "Commercial food photography dengan teknik High-Frame-Rate dan color grading presisi untuk mendongkrak konversi digital.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   },
@@ -123,10 +141,42 @@
     "type": "photo",
     "client": "Anugrah Tani Muda",
     "year": "2025",
-    "thumbnail": "/portfolio/luminaire.jpg",
-    "screenshot": "/portfolio/shots/luminaire-1.png",
+    "thumbnail": "/portfolio/anugrah-tani.jpg",
+    "screenshot": "/portfolio/anugrah-tani.jpg",
     "videoPreview": "",
+    "techStack": ["Brand Identity", "Eco-Packaging", "Product Photography", "Marketplace Strategy"],
+    "impact": "Built end-to-end eco-friendly brand positioning from zero to active marketplace sales.",
     "shortDescription": "Pengembangan identitas merek media tanam eceng gondok dari nol, desain kemasan produk ramah lingkungan, dan strategi marketplace.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
+  },
+  {
+    "id": "11",
+    "title": "Enterprise AI Assistant & Streaming Hub",
+    "category": "AI & Automation",
+    "type": "ai",
+    "client": "B2B SaaS & Service Clients",
+    "year": "2026",
+    "thumbnail": "/portfolio/ai-agent.jpg",
+    "screenshot": "/portfolio/ai-agent.jpg",
+    "videoPreview": "",
+    "techStack": ["Vercel AI SDK", "Gemini API", "Next.js Route Handlers", "SSE Streaming"],
+    "impact": "Sub-300ms token streaming responses with zero client-side API key exposure.",
+    "shortDescription": "Arsitektur asisten AI berbasis RAG dan route handler Next.js dengan streaming respons real-time yang aman untuk layanan pelanggan dan konsultasi.",
+    "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
+  },
+  {
+    "id": "12",
+    "title": "Multi-Platform Content & Scheduling Pipeline",
+    "category": "AI & Automation",
+    "type": "ai",
+    "client": "Digipro Studio Automation",
+    "year": "2026",
+    "thumbnail": "/portfolio/ai-automation.jpg",
+    "screenshot": "/portfolio/ai-automation.jpg",
+    "videoPreview": "",
+    "techStack": ["Python Agents", "OpenCV / FFmpeg", "Repliz REST API", "Edge CDN"],
+    "impact": "Automated end-to-end rendering, QA verification, and rolling 72-hour multi-platform dispatch.",
+    "shortDescription": "Pipeline otomasi produksi dan penjadwalan konten lintas platform (Instagram, YouTube, Facebook) dengan kontrol jadwal bergulir 72 jam.",
     "driveUrl": "https://drive.google.com/drive/folders/1sDvvgf9V16GD4kWJYJnSWm9cjY4MaZHs?usp=sharing"
   }
 ]

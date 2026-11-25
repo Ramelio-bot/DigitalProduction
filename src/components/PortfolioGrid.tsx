@@ -15,11 +15,13 @@ interface Project {
   thumbnail: string;
   screenshot?: string;
   videoPreview: string;
+  techStack?: string[];
+  impact?: string;
   shortDescription: string;
   driveUrl?: string;
 }
 
-const CATEGORIES = ["All", "Web & Software", "Cinematic & AI", "Photo & Branding"] as const;
+const CATEGORIES = ["All", "Web & Software", "AI & Automation", "Cinematic & AI", "Photo & Branding"] as const;
 type Category = (typeof CATEGORIES)[number];
 
 export default function PortfolioGrid() {
@@ -60,6 +62,10 @@ export default function PortfolioGrid() {
         </span>
         {CATEGORIES.map((category) => {
           const isActive = selectedCategory === category;
+          const count =
+            category === "All"
+              ? portfolioData.length
+              : (portfolioData as Project[]).filter((p) => p.category === category).length;
           return (
             <button
               key={category}
@@ -68,7 +74,7 @@ export default function PortfolioGrid() {
                 isActive ? "text-white bg-accent" : "text-muted hover:text-accent bg-transparent"
               }`}
             >
-              {category}
+              {category} <span className="opacity-60 ml-1">({count})</span>
               {isActive && (
                 <span className="sr-only">(Active)</span>
               )}
@@ -146,16 +152,35 @@ export default function PortfolioGrid() {
               </div>
 
               {/* Footer */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-6 py-4 border-t border-white/10 bg-black/40">
-                <p className="text-xs md:text-sm text-white/70 max-w-2xl leading-relaxed">
-                  {activeProject.shortDescription}
-                </p>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-6 py-5 border-t border-white/10 bg-black/40">
+                <div className="space-y-3 max-w-2xl">
+                  {activeProject.impact && (
+                    <p className="text-[11px] uppercase tracking-wider font-bold text-white/90">
+                      Impact: <span className="font-normal text-white/75">{activeProject.impact}</span>
+                    </p>
+                  )}
+                  <p className="text-xs md:text-sm text-white/70 leading-relaxed">
+                    {activeProject.shortDescription}
+                  </p>
+                  {activeProject.techStack && activeProject.techStack.length > 0 && (
+                    <div className="flex flex-wrap gap-2 pt-1">
+                      {activeProject.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="text-[10px] uppercase tracking-wider px-2.5 py-1 bg-white/10 text-white/80 rounded-sm"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
                 {activeProject.driveUrl && (
                   <a
                     href={activeProject.driveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-accent hover:text-white transition-colors text-xs font-bold uppercase tracking-wider shrink-0 rounded-sm"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-black hover:bg-accent hover:text-white transition-colors text-xs font-bold uppercase tracking-wider shrink-0 rounded-sm"
                   >
                     <FolderOpen className="w-4 h-4" />
                     <span>Drive Vault</span>
@@ -247,6 +272,11 @@ function ProjectCard({
           {project.type === "photo" && (
             <div className="absolute top-6 left-6 z-20 px-3 py-1 bg-white/90 backdrop-blur-md text-[10px] uppercase tracking-widest font-bold hairline-border">
               Brand & Photo
+            </div>
+          )}
+          {project.type === "ai" && (
+            <div className="absolute top-6 left-6 z-20 px-3 py-1 bg-white/90 backdrop-blur-md text-[10px] uppercase tracking-widest font-bold hairline-border">
+              AI & Automation
             </div>
           )}
 
